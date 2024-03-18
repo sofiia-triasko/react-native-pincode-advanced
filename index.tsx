@@ -92,6 +92,8 @@ export type IProps = {
   subtitleError?: string
   textButtonLockedPage?: string
   textCancelButtonTouchID?: string
+  sensorDescription: string
+  textError: string
   textDescriptionLockedPage?: string
   textSubDescriptionLockedPage?: string
   textPasswordVisibleFamily?: string
@@ -318,6 +320,8 @@ class PINCode extends React.PureComponent<IProps, IState> {
             subtitleComponent={this.props.subtitleComponent}
             subtitleError={this.props.subtitleError}
             textCancelButtonTouchID={this.props.textCancelButtonTouchID}
+            sensorDescription={this.props.sensorDescription}
+            textError={this.props.textError}
             textPasswordVisibleFamily={this.props.textPasswordVisibleFamily}
             textPasswordVisibleSize={this.props.textPasswordVisibleSize}
             title={this.props.titleEnter || "Enter your PIN Code"}

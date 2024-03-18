@@ -94,8 +94,8 @@ class PinCodeEnter extends React.PureComponent {
         const optionalConfigObject = {
             imageColor: '#e00606',
             imageErrorColor: '#ff0000',
-            sensorDescription: 'Touch sensor',
-            sensorErrorDescription: 'Failed',
+            sensorDescription: this.props.sensorDescription || 'Touch sensor',
+            sensorErrorDescription: this.props.textError || 'Failed',
             cancelText: this.props.textCancelButtonTouchID || 'Cancel',
             fallbackLabel: 'Show Passcode',
             unifiedErrors: false,

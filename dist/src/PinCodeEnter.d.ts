@@ -66,6 +66,8 @@ export interface IProps {
     subtitleComponent: any;
     subtitleError?: string;
     textCancelButtonTouchID?: string;
+    sensorDescription: string;
+    textError: string;
     textPasswordVisibleFamily?: string;
     textPasswordVisibleSize?: number;
     timePinLockedAsyncStorageName: string;
@@ -96,6 +98,6 @@ declare class PinCodeEnter extends React.PureComponent<IProps, IState> {
     triggerTouchID(): void;
     endProcess: (pinCode?: string) => Promise<void>;
     launchTouchID(): Promise<void>;
-    render(): any;
+    render(): JSX.Element;
 }
 export default PinCodeEnter;
